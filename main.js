@@ -9,14 +9,21 @@ let year = currentDate.getFullYear();
 let hour = currentDate.getHours();
 let mintues = currentDate.getMinutes();
 let seconds = currentDate.getSeconds();
+let period = "AM";
 
 //Array for Day and Months
 let dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thurday','Friday','Saturday'];
 let monthNames = ['January','Feburary','March','April','May','June','July'];
 
 
-let thisMonth  = monthNames[month] + "," + date + " " + year;
-let thisTime = hour + ":" +  mintues + ":" + seconds;
+let thisMonth  = monthNames[month] + " " + date + ", " + year;
+
+if(hour >= 12){
+    period = "PM";
+}
+hour = hour > 12 ? hour % 12 : hour;
+
+let thisTime = hour + " : " +  mintues + " : " + seconds + " " + period;
 
 document.getElementById('currentDay').innerHTML = dayNames[day];
 document.getElementById('currentMonth').innerHTML = thisMonth;

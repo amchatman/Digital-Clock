@@ -4,6 +4,8 @@
       <meta charset="utf-8">
          <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+
       </head>
 
            <!--Dynamic Clock 
@@ -16,28 +18,22 @@
                          -Month must be  in string format Ex: January 10, 1970
             -->
       <body>
-        <h1>Dynamic Clock</h1>
-        
-        <div>
-        <h2 id="currentDay"></h2>
+        <div class="clock">
+          <h1 class="clock-title">Dynamic Clock</h1>
+         
+          <div>
+          <h2 id="currentDay" class="day"></h2>
+          </div>
+
+          <div>
+          <h2 id="currentMonth" class="month"></h2>
+          </div>
+          <div>
+            <h2 id="currentTime" class="time"></h2>
+          </div>
         </div>
 
-        <div>
-        <h2 id="currentMonth"></h2>
-        </div>
 
-        <div>
-          <h2 id="currentTime"></h2>
-        </div>
-
-        <button id="twelveFormat">12 hours</button>
-        <button id="twenty4Format">24 hours</button>
-
-        <div>
-        <input type="number" name="hour" placeholder="hour" min="0" max="12">
-        <input type="number" name="mins" placeholder="min" min="0" max="59">
-        <input type="number" name="sec" placeholder="sec" min="0" max="12">
-        </div>
         <script src="/Dynamic-Clock/main.js"></script>
       </body>
 </html>

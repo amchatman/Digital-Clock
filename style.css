@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Montserrat, Arial, sans-serif;
+    background-color:#24292E;
+    color:#FFFFFF;
+}
+
+.clock{
+    max-width:100%;
+    width:1000px;
+    margin:50px auto;
+}
+.clock-title{
+    text-transform:uppercase;
+    font-size:50px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:15px
+    
+}
+.day{
+   font-weight:100;
+   text-align:center;
+   font-size:25px;
+ 
+}
+.month{
+    color:#FED054;
+    font-size:50px;
+    font-weight:900;
+    text-align:center;
+}
+.time{
+    font-size:85px;
+    text-align:center;
+    padding-top:20px
+}

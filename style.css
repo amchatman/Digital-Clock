@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --primary-color:#FED054;
+    --secondary-color:#24292E;
+    --font-color:#FFFFFF;
+}
+
 *{
     margin:0;
     padding:0;
@@ -8,8 +14,8 @@
 
 body{
     font-family:Montserrat, Arial, sans-serif;
-    background-color:#24292E;
-    color:#FFFFFF;
+    background-color:var(--secondary-color);
+    color:var(--font-color)
 }
 
 .clock{
@@ -32,7 +38,7 @@ body{
  
 }
 .month{
-    color:#FED054;
+    color:var(--primary-color);
     font-size:50px;
     font-weight:900;
     text-align:center;
@@ -46,12 +52,18 @@ body{
     text-align:center;
     margin-top:20px;
 }
-.changeFormat{
-    background-color:#FED054;
-    border:none;
-    padding:10px;
-    border-radius:2px;
-    font-weight:700;
-    text-transform:uppercase;
-    color:#FFFFFF;
-}
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary-color:#FED054;
+        --secondary-color:#24292E;
+        --font-color:#FFFFFF;
+    }
+  
+  }
+  @media (prefers-color-scheme: light) {
+    :root{
+        --primary-color:#FFFFFF;
+        --secondary-color:#FED054;
+        --font-color:#24292E;
+    }
+  }

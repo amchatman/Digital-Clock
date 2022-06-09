@@ -42,3 +42,16 @@ body{
     text-align:center;
     padding-top:20px
 }
+.button-container{
+    text-align:center;
+    margin-top:20px;
+}
+.changeFormat{
+    background-color:#FED054;
+    border:none;
+    padding:10px;
+    border-radius:2px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#FFFFFF;
+}

@@ -1,17 +1,18 @@
 function currentTime(){
 
 // Get Date, Month, Time & etc
-let currentDate = new Date();
-let day = currentDate.getDay();
-let month = currentDate.getMonth();
-let date = currentDate.getDate();
-let year = currentDate.getFullYear();
-let hour = currentDate.getHours();
-let mintues = currentDate.getMinutes();
-let seconds = currentDate.getSeconds();
-let period = "AM";
+var currentDate = new Date();
+var day = currentDate.getDay();
+var month = currentDate.getMonth();
+var date = currentDate.getDate();
+var year = currentDate.getFullYear();
+var hour = currentDate.getHours();
+var mintues = currentDate.getMinutes();
+var seconds = currentDate.getSeconds();
+var period = "AM";
+var clock24Hour ="false";
 
-
+changeButton = document.getElementById("changeFormat");
 //Array for Day and Months
 let dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 let monthNames = ['January','Feburary','March','April','May','June','July'];

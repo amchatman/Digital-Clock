@@ -11,13 +11,16 @@
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     font-family:Montserrat, Arial, sans-serif;
     background-color:var(--secondary-color);
     color:var(--font-color)
 }
-
+body.dark-theme {
+    --primary-color:#FED054;
+    --secondary-color:#24292E;
+    --font-color:#FFFFFF;
+  }
 .clock{
     max-width:100%;
     width:1000px;
@@ -63,18 +66,27 @@ body{
 .button-container input:hover{
     cursor:pointer;
 }
+.icon-container{
+    display:flex;
+    justify-content:flex-end;
+    padding:20px;
+}
+.light-mode-icon{
+    color:var(--primary-color);
+}
+.light-mode-icon:hover{
+    cursor:pointer;
+}
 @media (prefers-color-scheme: dark) {
     :root{
         --primary-color:#FED054;
         --secondary-color:#24292E;
         --font-color:#FFFFFF;
     }
-  
-  }
-  @media (prefers-color-scheme: light) {
-    :root{
+    body.light-theme {
         --primary-color:#FFFFFF;
         --secondary-color:#FED054;
         --font-color:#24292E;
     }
-  }
+}
+   

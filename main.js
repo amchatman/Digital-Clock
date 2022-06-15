@@ -6,11 +6,11 @@ var date = currentDate.getDate();
 var year = currentDate.getFullYear();
 
 //Array stores days of the week and months
-let dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-let monthNames = ['January','Feburary','March','April','May','June','July'];
+const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const monthNames = ['January','Feburary','March','April','May','June','July'];
 
 //Sets the date format as: Month Day, Year
-let thisMonth  = monthNames[month] + " " + date + ", " + year;
+const thisMonth  = monthNames[month] + " " + date + ", " + year;
 
 //Display day and month
 document.getElementById('currentDay').innerHTML = dayNames[day];

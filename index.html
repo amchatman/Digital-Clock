@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+      <title>Dynamic Clock</title>
       <meta charset="utf-8">
          <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -10,11 +11,8 @@
       </head>
 
            <!--Dynamic Clock 
-        Accomplishments: -Created a clock thats gets the current time
-                         -Have the background change base on the time of the clock base on
-                          Morning,Evening, and Night
-                         -Let user create a alarm or alert
-                         -Create a countdown for alarm
+        Accomplishments: -Created a clock thats gets the current time, day
+                          -Change from 12 hour format to 24 hour format
                          -Display the current date (date must be in in Month Day , Year format)
                          -Month must be  in string format Ex: January 10, 1970
             -->
@@ -41,19 +39,7 @@
           <div class="button-container">
           <input type="button" id="changeFormat" value="Change Format">
           </div>
-       
-          <div class="alarm-container">
-            <h2>Set a Alarm</h2>
-            <input type="number" placeholder="hour" min="0"max= "24">
-            <input type="number" placeholder="min" min="0" max="59">
-            <input type="number" placeholder="sec" min="0" max="59">
-          </div>
-
-          <div class="alarm-buttons">
-          <input type="button" value="Set Alarm">
-          <input type="button" value="Reset Alarm">
-          </div>
-        </div>
+       </div>
         
         <script src="main.js"></script>
       </body>

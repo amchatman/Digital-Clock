@@ -114,3 +114,11 @@ body.dark-theme {
     --font-color: #24292e;
   }
 }
+@media (max-width:768px){
+  .clock-title,.month {
+    font-size: 35px;
+  }
+  .time{
+    font-size:50px;
+  }
+}

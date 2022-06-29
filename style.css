@@ -114,6 +114,18 @@ body.dark-theme {
     --font-color: #24292e;
   }
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #ffffff;
+    --secondary-color: #fed054;
+    --font-color: #24292e;
+  }
+  body.light-theme {
+    --primary-color: #fed054;
+    --secondary-color: #24292e;
+    --font-color: #ffffff;
+  }
+}
 @media (max-width:768px){
   .clock-title,.month {
     font-size: 35px;

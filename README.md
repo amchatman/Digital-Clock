@@ -3,8 +3,8 @@ Dynamic Clock is a simple project that gets the current month,day, and time from
 
 ## Languages use:
 The application use the following languages
-..* HTML
-..* CSS
-..* JavaScript
+* HTML
+* CSS
+* JavaScript
 
 ![alt text](images/Screenshot.png "Screenshot of Dynamic Clock")

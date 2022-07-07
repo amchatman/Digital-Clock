@@ -102,6 +102,13 @@ body.dark-theme {
   border-radius: 2px;
   padding: 15px;
 }
+footer{
+  text-align:center;
+}
+footer a{
+  text-decoration:none;
+  color:var(--primary-color);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: #fed054;

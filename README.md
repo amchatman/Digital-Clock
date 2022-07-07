@@ -1,10 +1,7 @@
 # Dynamic Clock
-Dynamic Clock is a simple project that gets the current month,day, and time from their device. The user is able to switch from two time formats 12 hour and 24 hours.The usere can also switch from light and dark mode.
+Dynamic Clock is a simple project that gets the user's current day, month, and time from their device.There are two time formats available to the user: 12 and 24 hours.The user can shift between bright and dark settings in addition to selecting between different time formats.
 
 ## Languages use:
-The application use the following languages
-* HTML
-* CSS
-* JavaScript
+The program makes use of the following languages: HTML, CSS, and JavaScript. 
 
 ![alt text](images/Screenshot.png "Screenshot of Dynamic Clock")

@@ -7,7 +7,8 @@ var year = currentDate.getFullYear();
 
 //Array stores days of the week and months
 const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const monthNames = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July'];
+const monthNames = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July','August','September',
+'October','November','December'];
 
 //Sets the date format as: Month Day, Year
 const thisMonth = monthNames[month] + " " + date + ", " + year;

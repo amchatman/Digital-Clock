@@ -50,10 +50,11 @@ var changeFormat = function() {
 	twentyFourHour = !twentyFourHour;
 };
 //Change the theme color on click
-const lightbtn = document.querySelector('.light-mode-icon');
+/*const lightbtn = document.querySelector('.light-mode-icon');
 lightbtn.addEventListener("click", function() {
 	document.body.classList.toggle("light-theme");
 });
+*/
 
 //Change time format on click
 changeButton.addEventListener("click", changeFormat);

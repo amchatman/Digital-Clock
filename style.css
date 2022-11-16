@@ -37,6 +37,14 @@ body {
   font-family: Montserrat, Arial, sans-serif;
   background-color: var(--page-background);
 }
+.theme-change{
+  background-color:var(--page-background);
+  color:var(--text-color-two);
+  padding:0.3125rem;
+  font-size:1.125rem;
+  text-align: center;
+  border: none;
+}
 .clock {
   max-width: 100%;
   width:62.5rem;;
@@ -78,12 +86,6 @@ body {
   display: flex;
   justify-content: flex-end;
   padding:1.25rem;
-}
-.light-mode-icon {
-  color: var(--text-color-two);
-}
-.light-mode-icon:hover {
-  cursor: pointer;
 }
 footer{
   text-align:center;

@@ -22,13 +22,13 @@
       --page-background:var(--gold-yellow);
   }
 }
-body[theme ='dark']{
+body[data-theme='dark']{
   --text-color-one:var(--white);
   --text-color-two:var(--gold-yellow);
   --page-background:var(--offblack);
 
 }
-body[theme ='light']{
+body[data-theme='light']{
   --text-color-one:var(--white);
   --text-color-two:var(--offblack);
   --page-background:var(--gold-yellow);

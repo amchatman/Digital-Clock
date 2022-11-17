@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,41 +9,50 @@
   --white:#ffffff;
 }
 @media(prefers-color-scheme: dark){
-  *{
-      --text-color-one:var(--white);
-      --text-color-two:var(--gold-yellow);
-      --page-background:var(--offblack);
+  :root{
+    --page-background:var(--offblack);
+    --text-color:var(--white);
+    --accent-color:var(--gold-yellow);
+    --button-color:var(--gold-yellow);
+    --font-color:var(--white);
   }
 }
 @media(prefers-color-scheme: light){
-  *{
-      --text-color-one:var(--white);
-      --text-color-two:var(--offblack);
-      --page-background:var(--gold-yellow);
+  :root{
+    --page-background:var(--gold-yellow);
+    --text-color:var(--offblack);
+    --accent-color:var(--white);
+    --button-color:var(--offblack);
+    --font-color:var(--white);
   }
 }
-body[data-theme='dark']{
-  --text-color-one:var(--white);
-  --text-color-two:var(--gold-yellow);
+body[data-theme='dark'] {
   --page-background:var(--offblack);
-
+  --text-color:var(--white);
+  --accent-color:var(--gold-yellow);
+  --button-color:var(--gold-yellow);
+  --font-color:var(--white);
 }
-body[data-theme='light']{
-  --text-color-one:var(--white);
-  --text-color-two:var(--offblack);
+
+body[data-theme='light'] {
   --page-background:var(--gold-yellow);
+  --text-color:var(--offblack);
+  --accent-color:var(--white);
+  --button-color:var(--offblack);
+  --font-color:var(--white);
 }
 body {
   font-family: Montserrat, Arial, sans-serif;
-  background-color: var(--page-background);
+  background-color:var(--page-background);
+  color:var(--text-color);
 }
 .theme-change{
-  background-color:var(--page-background);
-  color:var(--text-color-two);
   padding:0.3125rem;
   font-size:1.125rem;
   text-align: center;
   border: none;
+  background-color:var(--page-background);
+  color:var(--text-color);
 }
 .clock {
   max-width: 100%;
@@ -54,10 +63,9 @@ body {
   font-weight: 100;
   text-align: center;
   font-size: 2.5rem;
-  color:var(--text-color-two);
+  color:var(--accent-color);
 }
 .month {
-  color: var(--text-color-one);
   font-size:2.1875rem;
   font-weight: 900;
   text-align: center;
@@ -66,18 +74,18 @@ body {
   font-size:3.4375rem;
   text-align: center;
   padding-top:1.25rem;
-  color:var(--text-color-two);
+  color:var(--accent-color);
 }
 .button-container {
   text-align: center;
   margin-top:1.25rem;
 }
 .button-container input {
-  background-color: var(--text-color-two);
-  color: var(--text-color-one);
-  border: 2px solid var(--text-color-two);
+  border: 2px solid var(--page-background);
   border-radius: 2px;
   padding:0.625rem;
+  background-color:var(--button-color);
+  color:var(--font-color);
 }
 .button-container input:hover {
   cursor: pointer;
@@ -90,12 +98,9 @@ body {
 footer{
   text-align:center;
 }
-.footer-title{
-  color:var(--text-color-one);
-}
 footer a{
   text-decoration:none;
-  color:var(--text-color-two);
+  color:var(--button-color);
 }
 @media (max-width:768px){
   .time{

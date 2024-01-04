@@ -16,17 +16,17 @@ let time = new Date();
 let hours = time.getHours();
 let mintues = time.getMinutes();
 let seconds = time.getSeconds();
+let midday = "AM"
 
-if(hours >= 12){
-    hours % 12;
-}
-if(mintues < 10){
-    mintues = "0" + mintues;
-};
-if(seconds < 10){
-    seconds = "0" + seconds;
-}
-let current_Time =  hours + " " + mintues + " " + seconds;
+//Ternary operaters
+midday = hours >= 12 ? "PM" :"AM";
+hours = hours >= 12 ? hours - 12 : hours; //Subtracts from 24 or 12
+hours = hours === 0 ? 12 : hours; //If hours = 0 convert 0 into 12
+hours = hours  < 10 ? "0" + hours : hours;
+mintues = mintues < 10 ? "0" + mintues : mintues;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+let current_Time =  hours + " " + mintues + " " + seconds + " " + midday;
 document.getElementById('current_time').innerHTML = current_Time;
 }
  

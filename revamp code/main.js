@@ -26,7 +26,7 @@ hours = hours  < 10 ? "0" + hours : hours;
 mintues = mintues < 10 ? "0" + mintues : mintues;
 seconds = seconds < 10 ? "0" + seconds : seconds;
 
-let current_Time =  hours + " " + mintues + " " + seconds + " " + midday;
+let current_Time =  hours + " " + mintues + " " + seconds + " " + "<span class='ampm'>" + midday + "</span>";
 document.getElementById('current_time').innerHTML = current_Time;
 }
  

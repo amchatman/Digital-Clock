@@ -16,14 +16,24 @@
    border:2px solid black;
    padding:10px;
  }
+ #today_date{
+   font-size:20px;
+   font-weight:bold;
+   padding-top:5px;
+ }
  .clock{
    text-align:center;
  }
+ .seconds{
+   font-size:20px;
+   padding:5px;
+ }
  #current_time{
-   font-size:65px;
+   font-size:60px;
    font-weight:bold;
  }
  .ampm{
    color:red;
+   font-size:25px;
    font-weight:bold;
  }

@@ -35,7 +35,6 @@ window.onload = function() {
     document.getElementById(currentDay).style.textDecoration = "underline";
 };
 
-
 let today_Date = current_Month[date.getMonth()] + " " + current_Date + " " + year;
 document.getElementById('today_date').innerHTML = today_Date;
 

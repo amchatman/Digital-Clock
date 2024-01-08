@@ -28,7 +28,13 @@ document.getElementById('current_time').innerHTML = current_Time;
 }
  
 setInterval(getcurrent_Time, 100);
-//Display the content of current_Day
+//Display the content of current_Day with a underline
+window.onload = function() {
+    let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
+    let currentDay = days[new Date().getDay()];
+    document.getElementById(currentDay).style.textDecoration = "underline";
+};
+
 
 let today_Date = current_Month[date.getMonth()] + " " + current_Date + " " + year;
 document.getElementById('today_date').innerHTML = today_Date;

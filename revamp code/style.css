@@ -5,8 +5,8 @@
     font-family: 'Orbitron', sans-serif;
  }
  body{
-  background-color:#000000;
-  color:#9FBBCC;
+  background-color:#0B0C0D;
+  color:#F0F0F2;
  }
  .container{
     display:flex;
@@ -15,7 +15,18 @@
     height:500px;
  }
  .wrapper{
-   padding:40px
+   padding:15px;
+   background-color:#232426;
+   border-radius:10px;
+ }
+ #weekends{
+  background-color:#2E2F33;
+  padding:10px;
+  border:2px solid #2E2F33;
+  border-radius:20px;
+ }
+ .day{
+  padding:10px;
  }
  #today_date{
    font-size:20px;
@@ -34,7 +45,7 @@
    font-weight:bold;
  }
  .ampm{
-   color:orange;
+   color:#64646A;
    font-size:25px;
    font-weight:bold;
  }

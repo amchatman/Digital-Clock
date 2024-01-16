@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --gold-yellow:#fed054;
+  --offblack:#24292e;
+  --white:#ffffff;
+}
+@media(prefers-color-scheme: dark){
+  :root{
+    --page-background:var(--offblack);
+    --text-color:var(--white);
+    --accent-color:var(--gold-yellow);
+    --button-color:var(--gold-yellow);
+    --font-color:var(--white);
+  }
+}
+@media(prefers-color-scheme: light){
+  :root{
+    --page-background:var(--gold-yellow);
+    --text-color:var(--offblack);
+    --accent-color:var(--white);
+    --button-color:var(--offblack);
+    --font-color:var(--white);
+  }
+}
+body[data-theme='dark'] {
+  --page-background:var(--offblack);
+  --text-color:var(--white);
+  --accent-color:var(--gold-yellow);
+  --button-color:var(--gold-yellow);
+  --font-color:var(--white);
+}
+
+body[data-theme='light'] {
+  --page-background:var(--gold-yellow);
+  --text-color:var(--offblack);
+  --accent-color:var(--white);
+  --button-color:var(--offblack);
+  --font-color:var(--white);
+}
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  background-color:var(--page-background);
+  color:var(--text-color);
+}
+.theme-change{
+  padding:0.3125rem;
+  font-size:1.125rem;
+  text-align: center;
+  border: none;
+  background-color:var(--page-background);
+  color:var(--text-color);
+}
+.clock {
+  max-width: 100%;
+  width:62.5rem;;
+  margin:3.125rem auto;
+}
+.day {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.5rem;
+  color:var(--accent-color);
+}
+.month {
+  font-size:2.1875rem;
+  font-weight: 900;
+  text-align: center;
+}
+.time {
+  font-size:3.4375rem;
+  text-align: center;
+  padding-top:1.25rem;
+  color:var(--accent-color);
+}
+.button-container {
+  text-align: center;
+  margin-top:1.25rem;
+}
+.button-container input {
+  border: 2px solid var(--page-background);
+  border-radius: 2px;
+  padding:0.625rem;
+  background-color:var(--button-color);
+  color:var(--font-color);
+}
+.button-container input:hover {
+  cursor: pointer;
+}
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  padding:1.25rem;
+}
+footer{
+  text-align:center;
+}
+footer a{
+  text-decoration:none;
+  color:var(--button-color);
+}
+@media (max-width:768px){
+  .time{
+   font-size:2.8125rem;
+  }
+}

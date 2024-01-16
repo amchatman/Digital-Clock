@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <title>Dynamic Clock</title>
+      <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+      </head>
+
+           <!--Dynamic Clock 
+        Accomplishments: -Created a clock thats gets the current time, day
+                          -Change from 12 hour format to 24 hour format
+                         -Display the current date (date must be in in Month Day , Year format)
+                         -Month must be  in string format Ex: January 10, 1970
+            -->
+      <body>
+        <div class="icon-container">
+            <select id="theme-toggler" class="theme-change">
+              <option value="auto">Auto</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+        </div>
+        <div class="clock">
+
+          <div>
+          <h1 id="currentDay" class="day"></h1>
+          </div>
+
+          <div>
+          <h2 id="currentMonth" class="month"></h2>
+          </div>
+
+          <div>
+            <h2 id="currentTime" class="time"></h2>
+          </div>
+
+          <div class="button-container">
+          <input type="button" id="changeFormat" value="Change Format">
+          </div>
+       </div>
+        <footer>
+          <h6 class="footer-title">Created by: <a href="https://github.com/amchatman">amchatman</a></h6>
+        </footer>
+        <script src="main.js"></script>
+      </body>
+</html>

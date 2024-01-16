@@ -1,79 +1,42 @@
-//Get current Day, Month, Date and Year
-var currentDate = new Date();
-var day = currentDate.getDay();
-var month = currentDate.getMonth();
-var date = currentDate.getDate();
-var year = currentDate.getFullYear();
+let date = new Date();
 
-//Array stores days of the week and months
-const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const monthNames = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July','August','September',
-'October','November','December'];
+let current_Month = ['Jan','Feb','Mar','June','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'];
 
-//Sets the date format as: Month Day, Year
-const thisMonth = monthNames[month] + " " + date + ", " + year;
+//Get Current Day, Month, Date, and year
+let month = current_Month[date.getMonth()];
+let current_Date = date.getDate();
+let year = date.getFullYear();
 
-//Display day and month
-document.getElementById('currentDay').innerHTML = dayNames[day];
-document.getElementById('currentMonth').innerHTML = thisMonth;
+function getcurrent_Time (){
+//Get Current Hour,Minutes,and seconds
+let time = new Date();
+let hours = time.getHours();
+let mintues = time.getMinutes();
+let seconds = time.getSeconds();
+let midday = "AM"
 
-//Function that gets the current time and switchs from the 24 hour clock to 12 hour
-var twentyFourHour = false,
-	thisTime = document.getElementById("currentTime"),
-	changeButton = document.getElementById("changeFormat");
+//Ternary operaters
+midday = hours >= 12 ? "PM" :"AM";
+hours = hours >= 12 ? hours - 12 : hours; //Subtracts from 24 or 12
+hours = hours === 0 ? 12 : hours; //If hours = 0 convert 0 into 12
+hours = hours  < 10 ? "0" + hours : hours;
+mintues = mintues < 10 ? "0" + mintues : mintues;
+seconds = seconds < 10 ? "0" + seconds : seconds;
 
-var chanageTime = function() {
-	var currentDate = new Date(),
-		hours = currentDate.getHours(),
-		mintues = currentDate.getMinutes(),
-		seconds = currentDate.getSeconds();
-
-	if (twentyFourHour) {
-		var period = hours >= 12 ? "PM" : "AM";
-		zero = seconds < 10 ? "0" : " ",
-			zeroMin = mintues < 10 ? "0" : " ";
-
-		thisTime.innerText = hours + " : " + zeroMin + mintues + " : " + zero + seconds + " " + period;
-
-	} else {
-		period = hours >= 12 ? "PM" : "AM",
-			twevleHour = hours % 12;
-		var zero = seconds < 10 ? "0" : " ",
-			zeroMin = mintues < 10 ? "0" : " ";
-
-		thisTime.innerText = twevleHour + " : " + zeroMin + mintues + " : " + zero + seconds + " " + period;
-	}
-
+let current_Time =  hours + " : " + mintues + "<sub class='seconds'>" + seconds + "</sub> " + "<span class='ampm'>" + midday + "</span>";
+document.getElementById('current_time').innerHTML = current_Time;
+}
+ 
+setInterval(getcurrent_Time, 100);
+//Display the content of current_Day with a underline
+window.onload = function() {
+    let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
+    let currentDay = days[new Date().getDay()];
+    document.getElementById(currentDay).style.textDecoration = "underline";
 };
 
-var changeFormat = function() {
-	twentyFourHour = !twentyFourHour;
-};
+let today_Date = current_Month[date.getMonth()] + " " + current_Date + " " + year;
+document.getElementById('today_date').innerHTML = today_Date;
 
+console.log(day, month, current_Date, year);
 
-//Change time format on click
-changeButton.addEventListener("click", changeFormat);
-window.setInterval(chanageTime, 100);
-
-//Change theme settings
-const themeSettings = evt => {
-    const body = document.body
-    const theme = evt.currentTarget.selectedOptions[0].value
-  
-    switch (theme) {
-      case 'light':
-        body.setAttribute('data-theme', 'light');
-        break;
-      case 'dark':
-        body.setAttribute('data-theme', 'dark');
-        break;
-      case 'auto':
-      default:
-        body.setAttribute('data-theme', 'auto');
-        break;
-    }
-  }
-  
-  const themeToggler = document.getElementById('theme-toggler')
-  
-  themeToggler.addEventListener('change', themeSettings)

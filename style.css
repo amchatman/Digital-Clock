@@ -8,14 +8,14 @@
   background:#232426;
   color:#F0F0F2;
   height:100vh;
-  width:100wh;
+  width:100vw;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction:column;
  }
  .wrapper{
-   padding:15px;
+   padding:0.9375rem;
    background-color:#232426;
    border-radius:50px;
    border:15px solid #232426;
@@ -24,39 +24,36 @@
  }
  #weekends{
   background-color:#2E2F33;
-  padding:10px;
+  padding:0.625rem;
   border:2px solid #2E2F33;
   border-radius:20px;
  }
  .day{
-  padding:10px;
+  padding:0.625rem;
  }
  #today_date{
-   font-size:20px;
-   font-weight:bold;
-   padding-top:15px;
- }
- .clock{
-   text-align:center;
+   padding-top:0.9375rem;
  }
  .seconds{
-   font-size:20px;
-   padding:5px;
+   padding:0.3125rem;
  }
  #current_time{
-   font-size:60px;
-   font-weight:bold;
-   text-shadow:#64646A 1px 0 10px;
+   font-size:3.75rem;
  }
  .ampm{
    color:#64646A;
-   font-size:25px;
-   font-weight:bold;
-   text-shadow:#64646A 1px 0 10px;
+   font-size:1.5625rem;
  }
-footer{
-  text-align:center;
-}
-footer a{
+ footer a{
   text-decoration:none;
 }
+footer, .clock{
+  text-align:center;
+}
+#today_date,.seconds{
+  font-size:1.25rem;
+}
+#current_time, .ampm{
+  text-shadow:#64646A 1px 0 10px;
+}
+

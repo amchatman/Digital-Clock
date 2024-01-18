@@ -14,9 +14,12 @@
  body{
   color:var(--white);
  }
- /*.button-container{
+ .button-container{
+  margin:10px;
+  padding:20px;
   width:100%;
   display:flex;
+  justify-content: flex-end;
  }
  .slider{
   background:var(--grey);
@@ -25,6 +28,7 @@
   border-radius:200px;
   cursor:pointer;
   position:relative;
+  transition:0.2s;
  }
  .slider::before{
   position: absolute;
@@ -33,9 +37,18 @@
   width:30px;
   height:30px;
   border-radius:200px;
-  margin:5px
+  margin:5px;
+  transition:0.2s;
  }
- */
+ input:checked + .slider{
+  background-color:green;
+ }
+ input:checked + .slider::before{
+  transform:translateX(60px);
+ }
+input{
+  display:none;
+}
  main{
   display:flex;
   justify-content:center;

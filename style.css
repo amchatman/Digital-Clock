@@ -13,8 +13,30 @@
  }
  body{
   color:var(--white);
-  height:100vh;
-  width:100vw;
+ }
+ /*.button-container{
+  width:100%;
+  display:flex;
+ }
+ .slider{
+  background:var(--grey);
+  width:100px;
+  height:40px;
+  border-radius:200px;
+  cursor:pointer;
+  position:relative;
+ }
+ .slider::before{
+  position: absolute;
+  content:' ';
+  background-color:var(--white);
+  width:30px;
+  height:30px;
+  border-radius:200px;
+  margin:5px
+ }
+ */
+ main{
   display:flex;
   justify-content:center;
   align-items:center;
@@ -54,6 +76,7 @@
  }
  footer a{
   text-decoration:none;
+  color:var(--grey);
 }
 body,#weekends,.warpper{
   background:var(--darkgrey);

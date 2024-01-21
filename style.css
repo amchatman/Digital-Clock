@@ -14,6 +14,7 @@
  body{
   color:var(--white);
  }
+ 
  .button-container{
   margin:10px;
   padding:20px;
@@ -41,10 +42,11 @@
   transition:0.2s;
  }
  input:checked + .slider{
-  background-color:green;
+  background-color:var(--white);
  }
  input:checked + .slider::before{
   transform:translateX(60px);
+  background-color:var(--shadowblack);
  }
 input{
   display:none;
@@ -103,4 +105,6 @@ footer, .clock{
 #current_time, .ampm{
   text-shadow:var(--grey) 1px 0 10px;
 }
+
+/*Themes*/
 

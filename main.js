@@ -38,8 +38,11 @@ window.onload = function() {
 let today_Date = current_Month[date.getMonth()] + " " + current_Date + " " + year;
 document.getElementById('today_date').innerHTML = today_Date;
 
-console.log(day, month, current_Date, year);
-
 //Theme Dark mode to Light mode
 const body = document.querySelector("body");
 toggle = document.querySelector(".toggle");
+
+toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+});
+console.log(body,toggle);

@@ -31,12 +31,18 @@
  .toggle::before{
   content:'';
   position:absolute;
-  background-color:#5D8DC3;
-  height:30px;
   width:30px;
+  height:30px;
+  background-color:#5D8DC3;
+  display:flex;
   border-radius:50%;
   margin:2px;
+  transition: all 0.3s ease-in-out;
  }
+ .toggle.active::before{
+  left:calc( 100% - 50%);
+  background-color:black;
+}
  .wrapper{
    padding:50px;
    border-radius: 50px;

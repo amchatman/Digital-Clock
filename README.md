@@ -1,5 +1,4 @@
 # Dynamic Clock
-Dynamic Clock is a simple project that gets the user's current day, month, and time from their device.There are two time formats available to the user: 12 and 24 hours.The user can shift between bright and dark settings in addition to selecting between different time formats.
 
 ## 🛠 Technologies
 
@@ -14,3 +13,8 @@ Project was created with:
 > - Change color scheme
 > - Remove 24 hour clock
 > - Remove theme
+
+> 01/23/2024
+> - Update CSS style with Neumorphism
+> - Update light and dark theme
+> - Add local storage for theme

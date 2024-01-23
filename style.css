@@ -13,6 +13,11 @@
   flex-direction:column;
   height:100vh;
   color:#BDC7D5;
+  transition:all 0.3s ease-in-out;
+ }
+ body.dark{
+  background-color:#2E2F33;
+  color:#F0F0F2;
  }
  .button-container{
   display:flex;
@@ -41,20 +46,32 @@
  }
  .toggle.active::before{
   left:calc( 100% - 50%);
-  background-color:black;
+  background-color:#2E2F33;
 }
  .wrapper{
    padding:50px;
    border-radius: 50px;
-   border-radius: 50px;
    background: #F0F0F2;
    box-shadow: inset -11px -11px 22px #d8d8da,
                inset 11px 11px 22px #ffffff;
+   transition:all 0.3s ease-in-out;
  }  
+ .wrapper.dark{
+  border-radius: 50px;
+  background: #2E2F33;
+  box-shadow: inset -11px -11px 22px #27282b,
+            inset 11px 11px 22px #35363b;
+  transition:all 0.3s ease-in-out;
+  
+ }
  #weekends{
   padding:0.625rem;
   border:2px solid #e3e3e3;
   border-radius:20px;
+ }
+ #weekends.dark{
+  background:#2E2F33;
+
  }
  .day{
   padding:0.625rem;

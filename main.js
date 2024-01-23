@@ -41,8 +41,15 @@ document.getElementById('today_date').innerHTML = today_Date;
 //Theme Dark mode to Light mode
 const body = document.querySelector("body");
 toggle = document.querySelector(".toggle");
+wrapper = document.querySelector(".wrapper");
+weekends = document.querySelector(".weekends");
+toggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    wrapper.classList.toggle("dark");
+    weekends.classList.toggle("dark");
 
-toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
+
 });
+
+toggle.addEventListener("click", () => toggle.classList.toggle("active"));
 console.log(body,toggle);

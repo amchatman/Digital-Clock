@@ -43,12 +43,25 @@ const body = document.querySelector("body");
 toggle = document.querySelector(".toggle");
 wrapper = document.querySelector(".wrapper");
 weekends = document.querySelector(".weekends");
+
+let getMode = localStorage.getItem("mode");
+    if(getMode && getMode === "dark"){
+        body.classList.add("dark");
+        wrapper.classList.toggle("dark");
+        weekends.classList.toggle("dark");
+        toggle.classList.add("active");
+
+    }
+
 toggle.addEventListener("click", () =>{
     body.classList.toggle("dark");
     wrapper.classList.toggle("dark");
     weekends.classList.toggle("dark");
 
-
+    if(!body.classList.contains("dark")){
+        return localStorage.setItem("mode","light");
+    }
+    localStorage.setItem("mode", "dark");
 });
 
 toggle.addEventListener("click", () => toggle.classList.toggle("active"));

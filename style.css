@@ -30,12 +30,12 @@
  .button-container{
   display:flex;
   justify-content:center;
-  margin-top:10px;
+  margin-top:0.625rem;
  }
  .toggle{
-  height:35px;
-  width:70px;
-  border-radius:100px;
+  height:2.1875rem;
+  width:4.375rem;
+  border-radius:6.25rem;
   background:var(--white);
   box-shadow: inset -11px -11px 22px var(--shadowgray),
             inset 11px 11px 22px var(--shadowwhite);
@@ -44,12 +44,12 @@
  .toggle::before{
   content:'';
   position:absolute;
-  width:30px;
-  height:30px;
+  width:1.875rem;
+  height:1.875rem;
   background-color:var(--skyblue);
   display:flex;
   border-radius:50%;
-  margin:2px;
+  margin:0.125rem;
   transition: all 0.3s ease-in-out;
  }
  .toggle.active::before{
@@ -57,7 +57,7 @@
   background-color:var(--grayblack);
 }
  .wrapper{
-   padding:50px;
+   padding:3.125rem;
    border-radius: 50px;
    background:var(--white);
    box-shadow: inset -11px -11px 22px var(--shadowgray),
@@ -101,7 +101,7 @@
  }
  footer a{
   text-decoration:none;
-  color:var(--grey);
+  color:var(--skyblue);
 }
 body,#weekends,.warpper{
   background:var(--white);

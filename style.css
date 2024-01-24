@@ -5,6 +5,14 @@
     box-sizing:border-box;
     font-family:'Orbitron', sans-serif;
     --white:#F0F0F2;
+    --greywhite:#e3e3e3;
+    --shadowwhite:#FFFFFF;
+    --shadowgray:#d8d8da;
+    --lightgray:#BDC7D5;
+    --shadowgrey:#35363b;
+    --grayblack:#2E2F33;
+    --shadowblack:#27282b;
+    --skyblue:#5D8DC3;
  }
  body{
   display:flex;
@@ -12,12 +20,12 @@
   align-items:center;
   flex-direction:column;
   height:100vh;
-  color:#BDC7D5;
+  color:var(--lightgray);
   transition:all 0.3s ease-in-out;
  }
  body.dark{
-  background-color:#2E2F33;
-  color:#F0F0F2;
+  background:var(--grayblack);
+  color:var(--white);
  }
  .button-container{
   display:flex;
@@ -28,9 +36,9 @@
   height:35px;
   width:70px;
   border-radius:100px;
-  background-color:#F0F0F2;
-  box-shadow: inset -11px -11px 22px #d8d8da,
-            inset 11px 11px 22px #ffffff;
+  background:var(--white);
+  box-shadow: inset -11px -11px 22px var(--shadowgray),
+            inset 11px 11px 22px var(--shadowwhite);
   cursor:pointer;
  }
  .toggle::before{
@@ -38,7 +46,7 @@
   position:absolute;
   width:30px;
   height:30px;
-  background-color:#5D8DC3;
+  background-color:var(--skyblue);
   display:flex;
   border-radius:50%;
   margin:2px;
@@ -46,32 +54,31 @@
  }
  .toggle.active::before{
   left:calc( 100% - 50%);
-  background-color:#2E2F33;
+  background-color:var(--grayblack);
 }
  .wrapper{
    padding:50px;
    border-radius: 50px;
-   background: #F0F0F2;
-   box-shadow: inset -11px -11px 22px #d8d8da,
-               inset 11px 11px 22px #ffffff;
+   background:var(--white);
+   box-shadow: inset -11px -11px 22px var(--shadowgray),
+               inset 11px 11px 22px var(--shadowwhite);
    transition:all 0.3s ease-in-out;
  }  
  .wrapper.dark{
   border-radius: 50px;
-  background: #2E2F33;
-  box-shadow: inset -11px -11px 22px #27282b,
-            inset 11px 11px 22px #35363b;
+  background:var(--grayblack);
+  box-shadow: inset -11px -11px 22px var(--shadowblack),
+            inset 11px 11px 22px var(--shadowgrey);
   transition:all 0.3s ease-in-out;
   
  }
  #weekends{
   padding:0.625rem;
-  border:2px solid #e3e3e3;
+  border:2px solid var(--greywhite);
   border-radius:20px;
  }
  #weekends.dark{
-  background:#2E2F33;
-
+  background:var(--grayblack);
  }
  .day{
   padding:0.625rem;
@@ -86,7 +93,7 @@
    font-size:3.75rem;
  }
  .ampm{
-   color:#5D8DC3;
+   color:var(--skyblue);
    font-size:1.5625rem;
  }
  footer{
@@ -109,5 +116,4 @@ footer, .clock{
   text-shadow: 1px 0 6px;
 }
 
-/*Themes*/
 

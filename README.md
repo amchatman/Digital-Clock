@@ -1,20 +1,17 @@
 # Dynamic Clock
+This is a digital clock with a Neumorphism style that supports both light and dark modes. It is built using HTML5, CSS3, and JavaScript. The clock is designed with a neumorphic effect, which gives it a modern and sleek look.
 
 ## 🛠 Technologies
-
-Project was created with:
 - HTML5
 - CSS3
 - JavaScript
 
-## 📈Latest Changes
-> 01/16/2024
-> - Update all JavaScript code to JS6
-> - Change color scheme
-> - Remove 24 hour clock
-> - Remove theme
+## Changes & Updates
+- Neumorphism style
+- 12 to 24-hour switch no longer available
+- New color scheme for light & dark modes
+- New button update to change light & dark mode
+- JavaScript code has been update to JS6
 
-> 01/23/2024
-> - Update CSS style with Neumorphism
-> - Update light and dark theme
-> - Add local storage for theme
+
+

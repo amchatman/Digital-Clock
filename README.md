@@ -1,4 +1,4 @@
-# Dynamic Clock
+# Digital Clock
 This is a digital clock with a Neumorphism style that supports both light and dark modes. It is built using HTML5, CSS3, and JavaScript. The clock is designed with a neumorphic effect, which gives it a modern and sleek look.
 
 ## 🛠 Technologies
